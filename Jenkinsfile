@@ -99,7 +99,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d --name spring-jenkins-demo-container -p 8081:8080 spring-jenkins-demo:latest'
+                bat 'docker run -d --name spring-jenkins-demo-container -p 8081:8081 spring-jenkins-demo:latest'
             }
         }
     }
